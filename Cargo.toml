@@ -1,10 +1,14 @@
 [package]
 name = "zlibrary"
+license = "MIT"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = ["Zhishan Zhang<zhangzhishanlo@gmail.com>"]
+repository = "https://github.com/zhangzhishan/zlibrary"
+readme = "README.md"
 
 [dependencies]
-reqwest = { version = "0.11", features = ["json"] }
+reqwest = { version = "0.11", features = ["json", "cookies"] }
 serde_json = "1.0.108"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+traxex = "0.1.1"
